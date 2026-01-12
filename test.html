@@ -1,17 +1,6 @@
-<body id="content-container"><script>
-fetch('https://www.hongkongairport.com/flightinfo-rest/rest/flights?date=2026-01-13&arrival=false&lang=zh_HK&cargo=false')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.json(); // Automatically parses the JSON body
-  })
-  .then(data => {
-    console.log(data); // 'data' is now a JavaScript object
-    // You can access properties like this:
-    // console.log(data.name);
-  })
-  .catch(error => {
-    console.error('Error fetching or parsing JSON:', error);
-  });
-</script></body>
+<body id="content-container">
+  <object data="https://ewlricw.rf.gd/fidp/espdata?gate=217" type="text/plain" width="100%" height="300px">
+      <!-- Fallback content for browsers that don't support the object tag -->
+      <p>Your browser does not support the object tag. View the file directly: <a href="path/to/your/external.txt">external.txt</a></p>
+  </object>
+</body>
