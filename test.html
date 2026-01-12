@@ -3,4 +3,17 @@
       <!-- Fallback content for browsers that don't support the object tag -->
       <p>Your browser does not support the object tag. View the file directly: <a href="path/to/your/external.txt">external.txt</a></p>
   </object>
+  <script></script>
+  fetch('https://ewlricw.rf.gd/fidp/espdata?gate=217'
+  mode: 'no-cors')
+  .then(response => response.text()) // Get the response as plain text
+  .then(data => {
+      // Display the raw text inside a <pre> element
+      document.getElementById('content-area').textContent = data;
+  })
+  .catch(error => {
+      console.error('Error fetching file:', error);
+      document.getElementById('content-area').textContent = 'Failed to load content.';
+  });
+  </script>
 </body>
