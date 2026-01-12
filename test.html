@@ -1,11 +1,10 @@
 <body id="content-container">
   <object data="https://www.hongkongairport.com/flightinfo-rest/rest/flights?date=2026-01-13&arrival=false&lang=zh_HK&cargo=false" type="text/plain" width="100%" height="300px">
       <!-- Fallback content for browsers that don't support the object tag -->
-      <p>Your browser does not support the object tag. View the file directly: <a href="path/to/your/external.txt">external.txt</a></p>
+      <p>Your browser does not support the object tag.</p>
   </object>
   <script>
-  fetch('https://ewlricw.rf.gd/fidp/espdata?gate=217', 
-  mode: 'no-cors')
+  fetch('https://ewlricw.rf.gd/fidp/espdata?gate=217', { mode: 'no-cors' })
   .then(response => response.text()) // Get the response as plain text
   .then(data => {
       // Display the raw text inside a <pre> element
